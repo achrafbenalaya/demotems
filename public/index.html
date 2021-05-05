@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://statics.teams.cdn.office.net/sdk/v1.6.0/js/MicrosoftTeams.min.js"></script>
     <title>Microsoft Teams Tab</title>
   </head>
   <body>
@@ -11,3 +13,9 @@
     <div id="root"></div>
   </body>
 </html>
+
+
+<script>
+    microsoftTeams.initialize();
+    microsoftTeams.settings.setValidityState(true);
+</script>
